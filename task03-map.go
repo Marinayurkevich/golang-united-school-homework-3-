@@ -2,11 +2,11 @@ package homework
 
 func sortMapValues(input map[int]string) (result []string) {
 	for k := range input{
-        keys = append(keys, k)
+        result = append(result, k)
     }
-    sort.Strings(keys)
+    sort.Strings(result)
   
-    for _, k := range keys {
+    for _, k := range result {
     result=append(result, input[k])
     }
 	return result
