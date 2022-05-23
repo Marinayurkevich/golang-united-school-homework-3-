@@ -1,13 +1,13 @@
 package homework
 
 func sortMapValues(input map[int]string) (result []string) {
-	for k := range input{
-        result = append(result, k)
+	for i := range input{
+        result = append(result, i)
     }
     sort.Strings(result)
   
     for _, k := range result {
-    result=append(result, input[k])
+    result=append(result, input[i])
     }
 	return result
 }
