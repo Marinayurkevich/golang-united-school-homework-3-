@@ -3,8 +3,8 @@ package homework
 func sortMapValues(input map[int]string) (result []string) {
 	
 	for k, v := range input {
-	result =append(result, v)
+	result =append(result, k)
 	}
-	Sort.Ints(result)
+	sort.Ints(result)
 	return result
 }
