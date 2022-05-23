@@ -1,6 +1,10 @@
 package homework
 
 func sortMapValues(input map[int]string) (result []string) {
-	//Place your code here
-	return
+	
+	for k, v := range input {
+	result =append(result, k)
+	}
+	sort.Ints(result)
+	return result
 }
